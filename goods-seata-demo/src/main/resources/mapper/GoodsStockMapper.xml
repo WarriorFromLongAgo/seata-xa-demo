@@ -1,0 +1,9 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuegao.goodsseatademo.dao.IGoodsStockMapper">
+
+    <insert id="saveGoods" parameterType="com.xuegao.goodsseatademo.model.doo.GoodsStock" keyProperty="id" useGeneratedKeys="true">
+        insert into cloudalibaba_seata_goods.t_goods_stock(id, goods_id, stock) values (null, #{goodsId}, #{stock})
+    </insert>
+
+</mapper>
